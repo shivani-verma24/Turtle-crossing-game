@@ -9,7 +9,7 @@ class CarManager:
         self.car_speed = 5
 
     def create_car(self):
-        random_chance = random.randint(1, 6)  # so that cars are created little slowly
+        random_chance = random.randint(1, 6) 
         if random_chance == 1:
             new_car = Turtle("square")
             new_car.penup()
