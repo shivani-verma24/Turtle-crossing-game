@@ -24,13 +24,13 @@ while(game_on):
     car.create_car()
     car.move_car()
 
-    #Detect collision with cars
+    
     for car_obj in car.all_cars:
         if car_obj.distance(player) < 20:
             game_on = False
             score.game_over()
 
-    #Reached finish line
+    
     if player.ycor() > 280:
         player.goto_start()
         score.increase_level()
